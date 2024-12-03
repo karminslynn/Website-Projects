@@ -1,0 +1,111 @@
+
+@font-face{ //addding downloaded fonts to css:
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+p{ //adding text boxes with slidebar
+    width: 200px; //base width
+    
+    overflow: hidden;
+    resize: horizontal;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+<textarea rows="20" cols="60"></textarea>
+
+
+<select name="fashion">
+  <optgroup label="Clothing">
+    <option value="t_shirt">T-Shirts</option>
+    <option value="sweater">Sweaters</option>
+    <option value="coats">Coats</option>
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #ff5733; /* custum color for default settings */
+}
+
+let x = (y = 10); is actually shorthand for:
+y = 10;
+let x = y;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

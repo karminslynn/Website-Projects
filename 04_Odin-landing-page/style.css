@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: "Roboto", sans-serif;
+min-width: 800px;
+height: 100%;
+}
+
+header .background-color{
+background-color: #1f2937;
+}
+
+.headerlogo{
+color: #f9faf8;
+font-size: 24px;
+text-align: center;
+padding: 10px 0;
+}
+
+.content{
+max-width: 900px;
+margin: 0 auto;
+}
+
+header .content{
+background-color: #1f2937;
+display: flex;
+justify-content: space-between;
+padding: 10px 0;
+}
+
+.wellcome .content{
+background-color: #1f2937;
+display: flex; 
+flex-direction: row;
+justify-content: space-between; 
+gap: 20px;
+padding: 70px 0;
+}
+
+.features .content{
+text-align: center;
+padding: 60px 20px;
+}
+    
+.quote .content{
+text-align: center;
+padding: 50px 20px;
+}
+
+.signup .content{
+padding: 120px 0;
+}
+
+.background-color{
+width: 100%;
+}
+
+.wellcome .background-color{
+background-color:#1f2937
+}
+
+.features .background-color,.signup .background-color{
+background-color: white;
+}
+
+.quote .background-color{
+background-color: #e5e7eb;
+}
+
+.wellcome-image img{
+width: 27em;
+height: auto;
+border-radius: 10px;
+min-width: 27px;
+}
+    
+.wellcome-text{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 27em;
+}
+
+.wellcome-text p, .wellcome-text h1{
+margin-bottom: 15px;
+}
+
+.wellcome-text h1{
+color: #F9FAF8;
+font-size: 40px;
+font-weight: 900;
+}
+
+.wellcome-text p{
+color: #F9FAF8;
+font-size: 18px;
+}
+
+.features-container{
+background-color: white;
+display: flex;
+justify-content: space-around;
+padding: 50px;
+}
+    
+.features-container img{
+height: auto;
+width: 150px;
+border-radius: 10px;
+margin-bottom: 10px;
+} 
+
+.features p{
+font-size: 25px;
+font-weight: 600;
+margin-top: 20px;
+}
+
+.quote .quote-p{
+color: #1f2937;
+font-style: italic;
+font-size: 36px;
+padding: 30px;
+}
+
+.quote .quote-user{
+color: #1f2937bb;
+font-size: 25px;
+margin-bottom: 20px;
+padding: 20px 0;
+}
+
+.bluebox{
+background-color:#3b82f6;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 10px;
+padding: 50px 100px;
+}
+
+.signup-header{
+color: white;
+font-size: 24px;
+}
+
+.signup-footer{
+color: rgba(255, 255, 255, 0.577);
+font-size: 18px;
+margin-top: 4px;
+}
+
+.signup button{
+border: 2px solid white;
+}
+
+footer{
+color: #e5e7e8e1;
+background-color: #1f2937;
+text-align: center;
+padding: 40px 20px;
+}
+
+ul{
+display: flex;
+align-items: center;
+list-style-type: none;
+gap: 10px;
+margin: 0;
+padding: 0;
+}
+
+li{
+color: #e5e7e8;
+font-size: 16px;
+padding: 10px 0;
+}
+
+a{
+text-decoration: none;
+}
+
+a:hover{
+color: #e5e7eb9f;
+}
+    
+a:visited{
+color: #E5E7EB;
+}
+
+button{
+color: white;
+background-color: #3b82f6;
+font-family: inherit;
+font-weight: 700;
+font-size: 18px;
+border-radius: 5px;
+border-width: 0;
+width: 120px;
+padding: 8px 25px;
+} 
+
+button:hover{
+color: white;
+background-color: #3b83f65d;
+}
+
+button:active{
+background-color: #3b82f6;
+}

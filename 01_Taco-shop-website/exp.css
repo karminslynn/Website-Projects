@@ -1,0 +1,19 @@
+
+
+
+
+.expbutton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 15px;    /* Add smooth, rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; 
+    font-weight: bold; /* Smooth transition for hover effects */
+}
+
+.expbutton:hover {
+    background-color: #0056b3;  /* Darken the button on hover */
+}

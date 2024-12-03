@@ -1,0 +1,80 @@
+html {
+    font-size: 22px;
+}
+
+
+img{
+
+    display: inline-block;
+    width: 400px;
+}
+
+body {
+
+    color: purple;
+    background-color: blue;
+    margin-right: 50px;
+    
+
+
+
+}
+
+main {
+
+    margin-left: 10%;}
+
+header{
+
+    margin-left: 5%;
+}
+
+
+h1 {
+
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+.divtest {
+    background-color: red;
+    color:black;
+    font-weight: 400;
+}
+
+a {
+    color: cadetblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: black;
+}
+
+
+footer {
+
+    text-align: center;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+
+}
+
+table{
+
+    margin-left: 30%;
+}

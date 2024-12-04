@@ -37,28 +37,50 @@ body{
             font-weight: 800;
             color: white;
         }
-
-    }
-    .guide{
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 40px 40px;
-        grid-template-rows: repeat(9, 30px);
-        > img{
-            width: 25px;
-        }
-        > p{
-            justify-self: left;
-            color: white;
-        > p:nth-child(6){
-            margin-bottom: 10px;
-        }
-        }
     }
 }
+
+.guides{
+    padding-left: 10px;
+    margin-top: 30px;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 40px 40px;
+    & img{
+        width: 22px;
+        align-self: center;
+    }
+    > a{
+        justify-self: left;
+        align-self: center;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+.guide1{
+    grid-template-rows: repeat(6, 25px);
+}   
+
+.guide2{
+    grid-template-rows: repeat(3, 25px);
+}   
 
 .content{
     background-color: #e2e8f0;
     grid-area: main;
 }
 
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}

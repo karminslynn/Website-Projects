@@ -12,7 +12,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 18% 82%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
@@ -28,10 +28,13 @@ body{
     background-color: #1992d4;
     grid-area: sidebar;
     padding: 15px;
+
     .logo{
+
         margin-left: 5px;
         display: flex;
         align-items: center;
+
         > p{
             margin-left: 10px;
             font-size: 25px;
@@ -47,10 +50,12 @@ body{
     display: grid;
     gap: 10px;
     grid-template-columns: 40px 40px;
+
     & img{
         width: 25px;
         align-self: center;
     }
+
     > a{
         font-weight: 500;
         justify-self: left;
@@ -71,6 +76,60 @@ body{
 .header{
     display: flex;
     flex-direction: column;
+
+    .header-search{
+        display: flex;
+        align-items: center;
+        padding: 10px 50px 0px 50px;
+
+        input{
+            font-family: inherit;
+            margin-right: auto;
+            border: none;
+            background-color: #e2e8f0;
+            width: 600px;
+            border-radius: 20px;
+            height: 30px;
+            padding: 0 20px;
+        }
+
+        img{
+            width: 25px;
+            margin-right: 20px;
+        }
+
+         img+img{
+            width: 50px;
+        }
+
+        p{
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    .header-info{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0 45px;
+        font-weight: 800;
+    
+    img{
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .intro{
+        margin-right: auto;
+        p+p{
+            font-size: 20px;
+        }
+    }
+
+
+
+    }
+
 }
 
 

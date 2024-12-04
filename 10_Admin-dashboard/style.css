@@ -1,6 +1,6 @@
 @font-face {
     font-family: robotoC;
-    src: url(Roboto-Regular.woff2);
+    src: url(./fonts/Roboto-Regular.woff2);
 }
 
 *{
@@ -29,12 +29,13 @@ body{
     grid-area: sidebar;
     padding: 15px;
     .logo{
+        margin-left: 5px;
         display: flex;
         align-items: center;
         > p{
             margin-left: 10px;
             font-size: 25px;
-            font-weight: 800;
+            font-weight: 900;
             color: white;
         }
     }
@@ -44,17 +45,18 @@ body{
     padding-left: 10px;
     margin-top: 30px;
     display: grid;
-    gap: 4px;
+    gap: 10px;
     grid-template-columns: 40px 40px;
     & img{
-        width: 22px;
+        width: 25px;
         align-self: center;
     }
     > a{
+        font-weight: 500;
         justify-self: left;
         align-self: center;
         color: white;
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -66,9 +68,9 @@ body{
     grid-template-rows: repeat(3, 25px);
 }   
 
-.content{
-    background-color: #e2e8f0;
-    grid-area: main;
+.header{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -80,6 +82,14 @@ body{
 
 
 
+
+
+
+
+.content{
+    background-color: #e2e8f0;
+    grid-area: main;
+}
 
 a{
     text-decoration: none;

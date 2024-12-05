@@ -12,7 +12,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% auto;
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
@@ -28,6 +28,7 @@ body{
     background-color: #1992d4;
     grid-area: sidebar;
     padding: 15px;
+    z-index: 2;
 
     .logo{
 
@@ -76,6 +77,8 @@ body{
 .header{
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.23) 0 0 15px;
+    z-index: 1;
 
     .header-search{
         display: flex;
@@ -114,22 +117,133 @@ body{
         padding: 0 45px;
         font-weight: 800;
     
-    img{
-        width: 60px;
-        margin-right: 20px;
-    }
+        img{
+            width: 60px;
+            margin-right: 20px;
+        }
 
-    .intro{
-        margin-right: auto;
-        p+p{
+        .intro{
+            margin-right: auto;
+            p+p{
+                font-size: 20px;
+            }
+        }
+
+        button{
+            background-color: #1992d4;
+            width: 80px;
+            height: 34px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            margin-left: 15px;
+        }
+    }
+}
+
+.content{
+    display: flex;
+    background-color: #e2e8f0;
+    grid-area: main;
+    .projects-p{
+        padding: 30px;
+        >p{
+            margin-bottom: 10px;
             font-size: 20px;
+            font-weight: 800
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: repeat(2, 400px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 20px;
+            .projectbox{
+                background-color: white;
+                border-radius: 15px;
+                padding: 30px;
+                p:first-child{
+                    font-size: large;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
+                p+p{
+                    font-size: 15px;
+                    color:#5e5e5e;
+                    margin-bottom: 15px;
+                }
+                .boxbuttons{
+                    display: flex;
+                    justify-content: flex-end;
+                    img{
+                    width: 22px;
+                    margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .announcements-p{
+        margin-top: 30px;
+        margin-right: 30px;
+        width: 300px;
+        >p{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 800
+        }
+        .announcements{
+            background-color: white;
+            padding: 30px 30px 10px 30px;
+            border-radius: 15px;
+            display: grid;
+            grid-template-rows: repeat(3, 120px);
+            >div{
+                p+p{
+                    font-size: 14px;
+                    color:#5e5e5e;
+                }
+                p:first-child{
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-bottom: 7px;
+                }
+            }
         }
     }
 
-
-
+    .trending-p{
+        margin-top: 40px;
+        width: 300px;
+        >p{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 800
+        }
+        .trending{
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            img{
+                width: 50px;
+            }
+            .profiles{
+                display: flex;
+                margin-bottom: 20px;
+                align-items: center;
+                font-size: 14px;
+                div{
+                    margin-left: 20px;
+                    p:first-child{
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                    }
+                    p+p{
+                        color:#5e5e5e;
+                    }
+                }
+            }
+        }
     }
-
 }
 
 
@@ -141,14 +255,6 @@ body{
 
 
 
-
-
-
-
-.content{
-    background-color: #e2e8f0;
-    grid-area: main;
-}
 
 a{
     text-decoration: none;

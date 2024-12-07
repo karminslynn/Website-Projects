@@ -15,16 +15,23 @@
         </p>
         <button class="opener">New Book</button>
         <dialog>
-            <label for="title">Book Title</label>
-            <input id="title"  type="text">
-            <label for="author">Book Author</label>
-            <input id="author"  type="text">
-            <label for="pages">Book Pages</label>
-            <input id="pages"  type="text">
-            <label for="pubyear">Book Publish Year</label>
-            <input id="pubyear"  type="text">
-            <button class="closer">Close</button>
-        </dialog>
+            <div class="d-display">
+                <div class="info">
+                    <label for="title">Book Title</label>
+                    <input id="title"  type="text">
+                    <label for="author">Book Author</label>
+                    <input id="author"  type="text">
+                    <label for="pages">Book Pages</label>
+                    <input id="pages"  type="text">
+                    <label for="pubyear">Book Publish Year</label>
+                    <input id="pubyear"  type="text">
+                </div>
+                <div class="interaction">
+                    <button class="closer">Add Book</button>
+                    <button onclick="dialog.close()">Cancel</button>
+                </div>
+            </div>
+        </dialog>   
     </section>
 
     <section class="display">

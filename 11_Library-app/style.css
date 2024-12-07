@@ -26,16 +26,6 @@ main{
         color: #e2e8f0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }
-    button{
-        margin-left: 40px;
-        width: 100px;
-        height: 50px;
-        color: #ffffff;
-        font-weight: 700;
-        border-radius: 20px;
-        border: 2px dashed rgb(169, 169, 215);
-        background: linear-gradient(40deg, rgb(17, 17, 79), rgb(5, 41, 94));
-    }
 }
 
 .display{
@@ -45,23 +35,83 @@ main{
     background-color: #aebed2c0;
     display: grid;
     grid-template-columns: repeat(3, 450px);
-    grid-template-rows: repeat(6, 120px);
-    gap: 20px
+    grid-template-rows: repeat(2, 150px);
+    grid-auto-rows: 150px;
+    gap: 24px;
 }
 
 .book{
+    position: relative;
     align-self: center;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.151) 0px 0px 15px;
     > p{
-        line-height: 1.4;
+        line-height: 1.5;
         display: block;
     }
+    button{
+        margin-left: auto;
+        display: block;
+        font: inherit;
+        position: absolute;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 40px;
+        bottom: 10px;
+        left: 360px;
+    }
+
+    button+button{
+        left: 265px;
+    };
 }
 
 dialog{
-    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    padding: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.532);
+    justify-self: center;
+    align-self: center;
+    .d-display{
+        display: flex;
+    }
+    .info, .interaction{
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction{
+        gap: 20px;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    .info{
+        > p{
+        margin-bottom: 5px;
+        }
+    }
+}
+
+button{
+    margin-left: 40px;
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px dashed rgb(169, 169, 215);
+    background: linear-gradient(40deg, rgb(17, 17, 79), rgb(5, 41, 94));
+}
+
+input{
+    font: inherit;
+    height: 29px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+    padding: 0 10px ;
 }

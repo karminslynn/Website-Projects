@@ -12,9 +12,9 @@ function addBookToLibrary(book){
     Library.push(book);
 };
 
-const opener = document.querySelector(".add");
-const dialog = document.querySelector("#dia");
-const closer = document.querySelector(".close");
+const opener = document.querySelector(".opener");
+const dialog = document.querySelector("dialog");
+const closer = document.querySelector(".closer");
 
 opener.addEventListener("click", () => {
     dialog.showModal();
@@ -27,7 +27,9 @@ closer.addEventListener("click", () => {
     const dpages = document.querySelector("#pages")
     const dpubyear = document.querySelector("#pubyear")
 
-    const book = new Book(dtitle.value, dauthor.value, dpages.value, dpubyear.value)
+    const book = new Book(dtitle.value, dauthor.value, dpages.value, dpubyear.value);
+
+    bookappend...
 
     dialog.close();
 })

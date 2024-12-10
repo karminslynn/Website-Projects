@@ -1,0 +1,17 @@
+
+    for(let i=0; i<3; i++){
+        if(){
+            if(board.top[i]==="X") players.playerOne=true;
+            else players.playerTwo=true; 
+        }
+    }
+
+    if(board.top[0]===board.mid[1]&&board.top[0]===board.bot[2]||
+    board.top[2]===board.mid[1]&&board.top[2]===board.bot[0]
+    board.top[0]===board.top[1]&&board.top[1]===board.bot[2]
+    board.mid[0]===board.mid[1]&&board.mid[1]===board.mid[2]
+    board.bot[0]===board.bot[1]&&board.bot[1]===board.bot[2]
+    board.top[i]===board.mid[i]&&board.top[i]===board.bot[i]
+    
+    
+    )

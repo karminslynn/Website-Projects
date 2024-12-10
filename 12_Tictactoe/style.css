@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.874);
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-areas: 
+    "header"
+    "game";
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background: linear-gradient(55deg, rgba(0, 0, 0, 0.411), rgb(23, 8, 22));
+    box-shadow: black 0px 0px 15px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    .newGame{
+        padding: 10px 25px;
+        margin-left: 40px;
+        border-radius: 6px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    };
+}
+
+main{
+    grid-area: game;
+    background: linear-gradient(45deg,  rgba(12, 4, 4, 0.304), rgb(18, 91, 155));
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.board-container{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template: repeat(3, 120px) / repeat(3, 120px);
+    gap: 20px;
+    button{
+        background-color:  #c8ccd1;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.326) 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+}
+
+label{
+    color: white;
+    margin: 0px 30px;
+    font-size: 30px;
+}
+
+input{
+    padding-left: 10px;
+    font-size: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+dialog{
+    padding: 30px;
+    font-size: 20px;
+}
